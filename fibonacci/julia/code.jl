@@ -8,7 +8,7 @@ fibonacci(::Val{n}) where n = fibonacci(Val(n-1)) + fibonacci(Val(n-2))
 let
     u = parse(Int,ARGS[1])
     r = 0
-    for i ∈ 1:u
+    for i ∈ 1:u-1
         r += fibonacci(Val(i))
     end
     println(r)
